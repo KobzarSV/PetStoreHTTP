@@ -1,7 +1,5 @@
 package ua.goit.petStore.model.orderModel;
 
-import java.time.LocalTime;
-
 public class Order {
     private long id;
     private long petId;

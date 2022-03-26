@@ -26,7 +26,6 @@ public class UserHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void createUser(User user) throws IOException, InterruptedException {
@@ -38,7 +37,6 @@ public class UserHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void updateUserPut(String userName, User user) throws IOException, InterruptedException {
@@ -50,7 +48,6 @@ public class UserHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void getUserByUsername(String userName) throws IOException, InterruptedException {
@@ -61,7 +58,6 @@ public class UserHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void userLogin(String userName, String password) throws IOException, InterruptedException {
@@ -72,7 +68,6 @@ public class UserHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void userLogout() throws IOException, InterruptedException {
@@ -83,9 +78,7 @@ public class UserHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
-
 
     public static void deleteUserByUsername(String userName) throws IOException, InterruptedException {
         final String requestBody = GSON.toJson(userName);
@@ -96,6 +89,5 @@ public class UserHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 }

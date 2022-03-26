@@ -1,10 +1,5 @@
 package ua.goit.petStore.model.petModel;
 
-import ua.goit.petStore.model.petModel.Category;
-import ua.goit.petStore.model.petModel.Pet;
-import ua.goit.petStore.model.petModel.PetStatus;
-import ua.goit.petStore.model.petModel.Tag;
-
 import java.util.ArrayList;
 import java.util.List;
 

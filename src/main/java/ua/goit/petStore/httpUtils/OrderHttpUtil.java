@@ -2,7 +2,6 @@ package ua.goit.petStore.httpUtils;
 
 import com.google.gson.Gson;
 import ua.goit.petStore.model.orderModel.Order;
-import ua.goit.petStore.model.petModel.Pet;
 
 import java.io.IOException;
 import java.net.URI;

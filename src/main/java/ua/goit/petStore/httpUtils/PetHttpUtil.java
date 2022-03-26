@@ -30,7 +30,6 @@ public class PetHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void uploadImagePet(int id) throws IOException, InterruptedException {
@@ -53,7 +52,6 @@ public class PetHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void updatePet(Pet pet) throws IOException, InterruptedException {
@@ -65,7 +63,6 @@ public class PetHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void getPetByStatus(PetStatus status) throws IOException, InterruptedException {
@@ -75,7 +72,6 @@ public class PetHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 
     public static void deletePetById(int id) throws IOException, InterruptedException {
@@ -86,6 +82,5 @@ public class PetHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
-        System.out.println(response.statusCode());
     }
 }
