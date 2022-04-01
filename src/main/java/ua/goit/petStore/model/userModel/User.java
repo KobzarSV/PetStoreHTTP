@@ -1,7 +1,5 @@
 package ua.goit.petStore.model.userModel;
 
-import java.util.Objects;
-
 public class User {
     private long id;
     private String username;
@@ -11,6 +9,23 @@ public class User {
     private String password;
     private String phone;
     private Integer userStatus;
+
+    public User(String username, String firstName, String lastName, String email, String password, String phone) {
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.phone = phone;
+    }
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public User() {
+    }
 
     public long getId() {
         return id;

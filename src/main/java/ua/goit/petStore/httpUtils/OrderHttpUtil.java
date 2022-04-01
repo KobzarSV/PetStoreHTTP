@@ -16,6 +16,8 @@ public class OrderHttpUtil {
 
     private static final String URL = "https://petstore.swagger.io/v2/";
 
+    public static String id = "";
+
     public static void createOrder(Order order) throws IOException, InterruptedException {
         final String requestBody = GSON.toJson(order);
         HttpRequest request = HttpRequest.newBuilder()
@@ -25,6 +27,8 @@ public class OrderHttpUtil {
                 .build();
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
+        String[] responseArr = response.body().split(",");
+        id = id + responseArr[0];
     }
 
     public static void getOrderById(long id) throws IOException, InterruptedException {

@@ -1,4 +1,6 @@
-package ua.goit.petStore.model.userModel;
+package ua.goit.petStore.service;
+
+import ua.goit.petStore.model.userModel.User;
 
 import java.util.ArrayList;
 import java.util.List;

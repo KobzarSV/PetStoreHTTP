@@ -8,6 +8,17 @@ public class Order {
     private OrderStatus status;
     private boolean complete;
 
+    public Order(long petId, int quantity, String shipDate, OrderStatus status, boolean complete) {
+        this.petId = petId;
+        this.quantity = quantity;
+        this.shipDate = shipDate;
+        this.status = status;
+        this.complete = complete;
+    }
+
+    public Order() {
+    }
+
     public long getId() {
         return id;
     }

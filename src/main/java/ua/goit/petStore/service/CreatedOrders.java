@@ -1,4 +1,7 @@
-package ua.goit.petStore.model.orderModel;
+package ua.goit.petStore.service;
+
+import ua.goit.petStore.model.orderModel.Order;
+import ua.goit.petStore.model.orderModel.OrderStatus;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

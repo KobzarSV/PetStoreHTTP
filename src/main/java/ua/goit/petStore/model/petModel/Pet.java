@@ -8,7 +8,7 @@ public class Pet {
     private String name;
     private List<String> photoUrls;
     private List<Tag> tags;
-    private PetStatus status;
+    private String status;
 
     public long getId() {
         return id;
@@ -50,11 +50,11 @@ public class Pet {
         this.tags = tags;
     }
 
-    public PetStatus getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(PetStatus status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 }
