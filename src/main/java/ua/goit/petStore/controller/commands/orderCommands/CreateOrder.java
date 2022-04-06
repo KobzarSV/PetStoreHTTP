@@ -1,5 +1,6 @@
-package ua.goit.petStore.controller.commands;
+package ua.goit.petStore.controller.commands.orderCommands;
 
+import ua.goit.petStore.controller.commands.Command;
 import ua.goit.petStore.httpUtils.OrderHttpUtil;
 import ua.goit.petStore.model.orderModel.Order;
 import ua.goit.petStore.model.orderModel.OrderStatus;
@@ -7,7 +8,6 @@ import ua.goit.petStore.view.View;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
-
 
 import static ua.goit.petStore.controller.commands.Commands.CREATE_ORDER;
 

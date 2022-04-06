@@ -1,5 +1,6 @@
-package ua.goit.petStore.controller.commands;
+package ua.goit.petStore.controller.commands.orderCommands;
 
+import ua.goit.petStore.controller.commands.Command;
 import ua.goit.petStore.httpUtils.OrderHttpUtil;
 import ua.goit.petStore.view.View;
 
@@ -23,7 +24,7 @@ public class InfoOrder implements Command {
     @Override
     public void process() {
         view.write("Enter pet id:");
-        long petId = Integer.parseInt(view.read());
+        long petId = Long.parseLong(view.read());
 
         try {
             OrderHttpUtil.getOrderById(petId);

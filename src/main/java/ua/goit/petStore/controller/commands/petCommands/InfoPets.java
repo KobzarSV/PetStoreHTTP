@@ -1,5 +1,6 @@
-package ua.goit.petStore.controller.commands;
+package ua.goit.petStore.controller.commands.petCommands;
 
+import ua.goit.petStore.controller.commands.Command;
 import ua.goit.petStore.httpUtils.PetHttpUtil;
 import ua.goit.petStore.model.petModel.PetStatus;
 import ua.goit.petStore.view.View;

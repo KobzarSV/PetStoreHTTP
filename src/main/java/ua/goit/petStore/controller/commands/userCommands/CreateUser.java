@@ -1,5 +1,6 @@
-package ua.goit.petStore.controller.commands;
+package ua.goit.petStore.controller.commands.userCommands;
 
+import ua.goit.petStore.controller.commands.Command;
 import ua.goit.petStore.httpUtils.UserHttpUtil;
 import ua.goit.petStore.model.userModel.User;
 import ua.goit.petStore.view.View;

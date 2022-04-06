@@ -1,6 +1,10 @@
 package ua.goit.petStore.controller;
 
 import ua.goit.petStore.controller.commands.*;
+import ua.goit.petStore.controller.commands.orderCommands.CreateOrder;
+import ua.goit.petStore.controller.commands.orderCommands.InfoOrder;
+import ua.goit.petStore.controller.commands.petCommands.InfoPets;
+import ua.goit.petStore.controller.commands.userCommands.*;
 import ua.goit.petStore.exception.ExitException;
 import ua.goit.petStore.view.View;
 
@@ -21,6 +25,8 @@ public class StoreController {
                 new CreateUser(view),
                 new UserLogin(view),
                 new UserLogout(view),
+                new InfoUser(view),
+                new UpdateUser(view),
                 new CreateOrder(view),
                 new InfoOrder(view),
                 new InfoPets(view)

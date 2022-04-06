@@ -10,13 +10,26 @@ public class User {
     private String phone;
     private Integer userStatus;
 
-    public User(String username, String firstName, String lastName, String email, String password, String phone) {
+    public User(String username, String firstName, String lastName, String email,
+                String password, String phone) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.password = password;
         this.phone = phone;
+    }
+
+    public User(long id, String username, String firstName, String lastName,
+                String email, String password, String phone, Integer userStatus) {
+        this.id = id;
+        this.username = username;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.phone = phone;
+        this.userStatus = userStatus;
     }
 
     public User(String username, String password) {

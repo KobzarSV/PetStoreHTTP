@@ -4,6 +4,8 @@ public enum Commands {
     CREATE_USER("create user"),
     USER_LOGIN("log in"),
     USER_LOGOUT("log out"),
+    INFO_USER("info user"),
+    UPDATE_USER("update user"),
     INFO_PETS("info pets"),
     CREATE_ORDER("create order"),
     INFO_ABOUT_ORDER("info order"),

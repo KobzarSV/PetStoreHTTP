@@ -90,4 +90,40 @@ public class UserHttpUtil {
         final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
         System.out.println(response.body());
     }
+
+    public static String id = "";
+    public static String username = "";
+    public static String firstName = "";
+    public static String lastName = "";
+    public static String email = "";
+    public static String password = "";
+    public static String phone = "";
+    public static String status = "";
+
+    public static void getUserForUpdate(String userName) throws IOException, InterruptedException {
+        id = "";
+        username = "";
+        firstName = "";
+        lastName = "";
+        email = "";
+        password = "";
+        phone = "";
+        status = "";
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(String.format("%s%s%s", URL, "user/", userName)))
+                .GET()
+                .header("Content-type", "application/json")
+                .build();
+        final HttpResponse<String> response = CLIENT.send(request, HttpResponse.BodyHandlers.ofString());
+        System.out.println(response.body());
+        String[] responseArr = response.body().split(",");
+        id = id + responseArr[0];
+        username = username + responseArr[1];
+        firstName = firstName + responseArr[2];
+        lastName = lastName + responseArr[3];
+        email = email + responseArr[4];
+        password = password + responseArr[5];
+        phone = phone + responseArr[6];
+        status = status + responseArr[7];
+    }
 }
